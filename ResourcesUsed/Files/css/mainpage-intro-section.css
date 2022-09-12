@@ -1,0 +1,183 @@
+section#main-page-intro{
+    width: 100vw;
+    position:relative;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+}
+
+/* Side Name */
+.sideName{
+    margin-top: 1.125rem;
+    margin-right: 1.125rem;
+    position: fixed;
+    right: 2.1rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+.myName{
+    float: right;
+    font-size: 35px;
+    font-weight: 700;
+}
+.UserProfileCircle{
+    float: left;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 2.688rem;
+    height: 2.688rem;
+    margin-right: 15px;
+}
+.UserProfileCircle img{
+    max-width: 70%;
+    max-height: 70%;
+    position: relative;
+    left: 9px;
+    top: 6px;
+}
+.main-content{
+    position: absolute;
+    left: 20vw;
+    top: 30vh;
+    font-size: 6.25rem;
+    font-weight: 700;
+}
+.span-together{
+    display: flex;
+}
+.main-content-II-Line{
+    display: flex;
+    gap: 50px;
+}
+.subtitle{
+    font-size: 35px;
+    position: relative;
+    left: 10rem;
+}
+.subtitle :hover{
+    text-shadow: 0 0 10px #ffffffdc;
+}
+.scroll-down{
+    position: absolute;
+    top: 85%;
+    left: 60%;
+}
+.scrollDown-circle{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+}
+.arrowDown{
+    position: relative;
+    top: 45px;
+    left: 11px;
+    width: 54px;
+}
+.vDesign{
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.v-I{
+    transform: rotate(45deg);
+}
+.v-II{
+    position: relative;
+    right: -3px;
+    bottom: 5px;
+    float: right;
+    transform: rotate(315deg);
+}
+.scroll-down:hover .v-I, .scroll-down:hover .v-II,.scroll-down:hover .scrollDown-circle{
+    box-shadow:0 0 10px #ffffffdc ;
+}
+.scroll-down:focus{
+    transition: 0.5s ease-in;
+}
+@media only screen and (max-width: 425px) {
+    
+    #loadingScreen-text {
+        position: absolute;
+        top: 20%;
+        margin: 25%;
+        z-index: 100;
+    }
+    .mobileDevices{
+        display: block;
+    }
+    section#main-page-intro{
+        left: 0rem;
+    }
+    nav{
+        display: none;
+    }
+    .sideName{
+        margin-right: 0px;
+    }
+    .main-content{
+        left: 5vw;
+        top: 40vh;
+    }
+    .myName{
+        font-size: 20px;
+
+    }
+    .UserProfileCircle{
+        height: 20px;
+        width: 20px;
+    }
+    .UserProfileCircle img{
+        left: 4px;
+        top: 2px;
+    }
+    .bgAnimation-element span{
+        border-radius: 100% !important;
+    }
+    .title-content{
+        font-size: 2.5rem;
+    }
+    .main-content-II-Line {
+        gap: 10px;
+    }
+    .subtitle{
+        font-size: 20px;
+        top: 5px;
+        left: 2.5rem;
+    }
+    .scroll-down{
+        top: 90%;
+        left: 50%;
+    }
+    .scrollDown-circle{
+        width: 2rem;
+        height: 2rem;
+    }
+    .vDesign{
+        height: 2px;
+        width: 15px;
+    }
+    .arrowDown{
+        top: 20px;
+        left: 4px;
+    }
+    .v-II{
+        right: 30px;
+        bottom: 2px;
+    }
+    
+
+}
+@media only screen and (max-width: 1024px){
+    nav{
+        display: none;
+    }
+    .sideName{
+        display: none;
+    }
+    .mobileDevices{
+        display: inline-block;
+    }
+
+} 

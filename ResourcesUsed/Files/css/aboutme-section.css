@@ -1,0 +1,108 @@
+
+section#about-me-section{
+    width: 100vw;
+    position:relative;
+    left: 15vw;
+}
+.intro-bio, #about-me-section, #my-skills-section, .progressBars{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+.intro-bio{
+    width: 100vw;
+    align-items: center;
+}
+.section-title, .my-skills{
+    font-size:4.2rem;
+    font-weight: 600;
+    line-height: 83.5px;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    text-decoration: underline;
+}
+
+
+.about-me-section-profile-pic{
+    height: 12.50rem;
+}
+.about-me-section-profile-pic img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.small-bio{
+    font-size:30px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    line-height: 37px;
+    width:100%;
+}
+#my-skills-section{
+    position: relative;
+    top: -35px;
+    bottom: -2px;
+    z-index: -1;
+}
+label{
+    display: block;
+}
+progress{
+    height:3rem;
+    width: 100%;
+    border: 0;
+}  
+progress::-webkit-progress-bar {
+    border-radius: 40px;
+    background-color: #fff;
+    
+}
+progress::-webkit-progress-value {
+    background-color: #C65555;
+    border-radius: 40px;
+}
+
+.progressBars{
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    gap: 0.5rem;
+}
+.progressBars div{
+    border-radius: 20px;
+}
+.progress-name-label{
+    font-size: 2rem;
+    line-height: 37px;
+}
+@media only screen and (max-width: 425px) {
+    /* About ME */
+    section#about-me-section{
+        left: 0;
+    }
+    .section-title,.my-skills{
+        font-size: 2rem;
+    }
+    .about-me-section-profile-pic{
+        height: 6.25rem;
+    }
+    .small-bio{
+        font-size: 15px;
+        line-height: 17px;
+        height: auto;
+    }
+    progress{
+        height: 1rem;
+    }
+    .progressBars{
+        gap:0;
+    }
+    .progress-name-label{
+        font-size: 1rem;
+    }
+    #my-skills-section{
+        gap: 2.5rem;
+    }
+}

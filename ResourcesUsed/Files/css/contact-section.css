@@ -1,0 +1,84 @@
+section#contact-section{
+    width: fit-content;
+    position:relative;
+    /* top: 105vh; */
+    left: 30vw;
+}
+.title-contact{
+    left: 24rem;
+    margin-bottom: 5rem;
+}
+input::placeholder,textarea::placeholder{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+input,textarea{
+    outline: none;
+    border: none;
+    background-color: #353535;
+    height: 3.125rem;
+    border-radius: 10px;
+}
+input[type="text"] {
+    padding:5px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type="text"]:focus,textarea:focus{
+    border-bottom: 2px solid #C65555;
+}
+input[type="submit"]{
+    border: 2px solid #C65555;
+    width: 15rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+#submitBtn:hover{
+    border-color:#fff;
+    cursor: pointer;
+    color: #C65555; 
+}
+.name-gmail{
+    display: flex;
+}
+form{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+#subject{
+    display: block;
+    width: 63.50rem;
+}
+#name, #gmail{
+    width: 30rem;
+}
+#name{
+    margin-right: 2.50rem;
+}
+textarea{
+    max-width: 63.50rem;
+    max-height: 30.25rem;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+textarea::placeholder{
+    max-width: 63.50rem;
+    max-height: 30.25rem;
+}
+#message{
+    height: 63.5rem;
+}
+.contact-form{
+    float: left;
+    height: fit-content;
+}

@@ -1,0 +1,225 @@
+
+body{
+    background-color: #212121;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color:transparent;
+    /* overflow-y:scroll; */
+}
+.website-content{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    position: fixed;
+    width: 13.125rem;
+    height: 100vh;
+    background-color: #242424;
+    min-width: 6rem;
+    z-index: 99;
+
+}
+.title-name{
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    top: 6.8rem;
+    left: 1.25rem;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+.title-image img{
+    width: 13.125rem;
+    height: 12.5rem;
+    position: relative;
+    top: -2.813rem;
+    overflow: scroll;
+    z-index: 1;
+}
+.nav-items{
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+}
+.nav-items-desktop{
+    width: 13.125rem;
+}
+.nav-items a{
+    text-decoration: none;
+}
+.nav-design{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #323335;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+    border-radius: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.188rem;
+    line-height: 2.688rem;
+}
+.nav-links:hover{
+    background-color:#3F4145; 
+    cursor: pointer;
+    color: #C65555;
+    text-shadow: 0 0 10px #c65555b0;
+}
+.socialMedia{
+    position:absolute;
+    top: 80vh;
+    /* display: grid; */
+
+}
+.socialMedia div{
+    display: inline-block;
+}
+.socialMedia img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.filled-logo{
+    display: none;
+}
+
+.github:hover .github-filled-logo{
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+.github:hover .github-logo{
+    display: none;
+}
+.linkedIn:hover .linkedIn-filled-logo{ 
+    display: block;
+    transition: 0.5s ease-in-out;
+
+}
+.linkedIn:hover .linkedIn-logo{ 
+    display: none;
+}
+.twitter:hover .twitter-filled-logo{
+    display: block; 
+    transition: 0.5s ease-in-out;
+}
+.twitter:hover .twitter-logo{
+    display: none; 
+}
+
+.mobileDevices{
+    height: 4rem;   
+    width: 100vw;
+    z-index: 99;
+    display: none;
+}
+.title-image-mobile img{
+    height: 4rem;
+    width: 4rem;
+    top: 0;
+    left: 15px;
+    z-index: -1;
+}
+.nav-btn{
+    position: relative;
+    bottom: 82px;
+    right: 10px;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    gap: 9px;
+    padding: 14px 6px;
+    width: 50px;
+    height: 35px;
+    border-radius: 8px;
+    margin-left: 41px;
+    margin-top: 13px;
+}
+.nav-btn .ham {
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+    background-color: #ffffffdc;
+    border-radius: 10px;
+    /* opacity: 0; */
+    transition: 0.5s;
+}
+.nav-btn .ham-close{
+    border-radius: 10px;
+    position: absolute;
+}
+.nav-btn .i4{
+    height: 5px;
+    width: 50px;
+}
+.nav-btn .i5{
+    height: 50px;
+    width: 5px;
+}
+
+/* These values of i4 and i5 varies as change in position  */
+.nav-btn .i4{
+    top: 112px;
+}
+.nav-btn .i5{
+    top: 90px;
+    right: 31px;
+}
+.nav-btn-close{
+    transition: 0.5s;
+    background-color: #e32121;
+    transform: rotate(45deg);
+    border-color:#e32121 ;
+}
+#hamburger-icon-close{
+    position: relative;
+    bottom: 165px;
+    left: 95px;
+}
+.navBurgerIconContent{
+    position: relative;
+    height: 100vh;
+    background-color: #212121;
+    top: -5px;
+}
+.nav-btn-links-mobile-items{
+    border-radius: 0px;
+    border-bottom: 0;
+    margin-top: 20px;
+    font-size: 1.5em;
+    line-height: 1.5rem;
+}
+#about-me-link{
+    left: 10px;
+}
+.centerImage{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 27%;
+    
+}
+.centerImage img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.title-name-mobile{
+    position: relative;
+    top: -45px;
+    left: 0;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon get new favicon-->
+    <link rel="shortcut icon" href="./ResourcesUsed/Images/favicon.ico" type="image/x-icon">
+    <!-- My own CSS -->
+    <!-- Navbar and intro page CSS -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/navbar.css">
+    <!-- Main page Intro -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/mainpage-intro-section.css">
+    <!-- About Me Section CSS -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/aboutme-section.css">
+    <!-- Portfolio Section CSS-->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/portfolio-section.css">
+    <!-- Blog Section  CSS-->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/blog-section.css">
+    <!-- Hire Me Section -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/contact-section.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/animation.css">
+    <!-- Page Animation -->
+    <link rel="stylesheet" href="./ResourcesUsed/Files/css/page-animation.css">
+    <!-- Font Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <title>Portfolio-Maheep Gupta</title>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loadingScreen">
+        <p id="loadingScreen-text">Loading...</p>
+    </div>
+
+    <!-- NavBar -->
+    <nav>
+        <div class="title-image"  onclick="mainPageAnimation()">
+            <img src="./ResourcesUsed/Images/Title-Image3.png" alt="Title Image" onclick="mainPageAnimation()">
+            <!-- Title Name -->
+            <div class="title-name " onclick="mainPageAnimation()">MAHEEP GUPTA</div>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="nav-items">
+
+            <div id="about-me-link" class="nav-links aboutMe nav-design" onclick="aboutMeAnimation()">About Me</div>
+
+            <div id="portfolio-link" class="portfolio nav-design nav-links" onclick="portfolioAnimation()">Portfolio</div>
+
+            <div id="blog-link" class=" nav-links Blog nav-design" onclick="blogsAnimation()">Blogs</div>
+            
+
+            <div id="contact-link" class="nav-links hireMe nav-design" onclick="contactAnimation()">Contact</div>
+            
+
+        </div>
+    </nav>
+    <!-- Navbar for Devices min width 1200px -->
+    <nav class="mobileDevices">
+        <!-- Navbar Mobile -->
+        <div class="title-image-mobile"  onclick="mainPageAnimation()">
+
+            <img src="./ResourcesUsed/Images/Title-Image3.png" alt="Title Image" onclick="mainPageAnimation()">
+        </div>
+        <!-- HamBurger Icon -->
+        <div class="nav-btn nav-items-desktop" id="hamburger-icon" onclick="hamburgerActivated()">
+            <div class="i1 ham"></div>
+            <div class="i2 ham"></div>
+            <div class="i3 ham"></div>
+        </div>
+
+        <div class="nav-btn Hide" id="hamburger-icon-close" onclick="hamburgerDeactivate()">
+            <div class="i4 ham-close nav-btn-close"></div>
+            <div class="i5 ham-close nav-btn-close "></div>
+        </div>
+        <!-- Hamburger Items -->
+
+        <div class="navBurgerIconContent nav-items Hide">
+            <div class="centerImage">
+                <img src="./ResourcesUsed/Images/Title-Image3.png" alt="title-image">
+                <!-- Title Name -->
+                <div class="title-name title-name-mobile" onclick="mainPageAnimation()">MAHEEP GUPTA</div>
+            </div>
+
+            <div id="about-me-link" class="nav-links aboutMe nav-design nav-btn-links-mobile-items" onclick="aboutMeAnimation()">About Me</div>
+
+            <div id="portfolio-link" class="portfolio nav-design nav-links nav-btn-links-mobile-items" onclick="portfolioAnimation()">Portfolio</div>
+
+            <div id="blog-link" class=" nav-links Blog nav-design nav-btn-links-mobile-items" onclick="blogsAnimation()">Blogs</div>
+            
+
+            <div id="contact-link" class="nav-links hireMe nav-design nav-btn-links-mobile-items" onclick="contactAnimation()">Contact</div>
+                
+
+        </div>
+    </nav>
+    <section id="main-page-intro">
+        <!-- Side Name -->
+        <div class="sideName">
+            <div class="UserProfileCircle"><img src="./ResourcesUsed/Images/user.png" alt="user-profile"></div>
+            <div class="myName"><span style="color: #ff6666; text-shadow: 0 0 10px #c65555b0;">M</span>aheep <span style="color: #ff6666;text-shadow: 0 0 10px #c65555b0;">G</span>upta</div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="title-content section-title-animation">
+                <div class="salutation span-together">
+                    <span onmouseover="elementHovered(this)" id="H1" onmouseleave="elementOutHovered(this)">H</span>
+                    <span onmouseover="elementHovered(this)" id="i" onmouseleave="elementOutHovered(this)">i,</span>
+                </div>
+                <div class="main-content-II-Line">
+                    <div class="intro span-together">
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="I">I'</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="m">m</span>
+                    </div>
+                    <div id="animated-name" class="name span-together">
+                        <span style="color: #ff6666; text-shadow: 0 0 10px #c65555b0;">M</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="A1">a</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="H2">h</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="E1">e</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="E2">e</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="P1">p</span>
+                        <span>&nbsp;</span>
+    
+                        <span style="color: #ff6666; text-shadow: 0 0 10px #c65555b0;">G</span>
+    
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="U">u</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="P2">p</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="T">t</span>
+                        <span onmouseover="elementHovered(this)" onmouseleave="elementOutHovered(this)" id="A2">a</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtitle Hide section-title-animation">
+                <span>A Web Developer in training</span>
+            </div>
+        </div>
+        <!-- Scroll Down Button -->
+        <div class="scroll-down">
+            <a href="#about-me-section">
+                <div class="scrollDown-circle">
+                    <div class="arrowDown">
+                        <div class="v-I vDesign"></div>
+                        <div class="v-II vDesign"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Bg Animation -->
+    <div class="bubbles bgAnimation-element">
+        <span style="--i:20"></span> 
+        <span style="--i:3"></span> 
+        <span style="--i:6"></span> 
+        <span style="--i:81"></span> 
+        <span style="--i:64"></span> 
+        <span style="--i:95"></span> 
+        <span style="--i:34"></span> 
+        <span style="--i:56"></span> 
+        <span style="--i:78"></span> 
+        <span style="--i:65"></span> 
+        <span style="--i:1"></span> 
+        <span style="--i:99"></span> 
+        <span style="--i:62"></span> 
+        <span style="--i:96"></span> 
+        <span style="--i:13"></span> 
+        <span style="--i:17"></span> 
+        <span style="--i:19"></span> 
+        <span style="--i:10"></span> 
+        <span style="--i:91"></span> 
+        <span style="--i:39"></span> 
+        <span style="--i:98"></span> 
+        <span style="--i:61"></span> 
+        <span style="--i:32"></span> 
+        <span style="--i:41"></span>
+        <span style="--i:4"></span>
+        <span style="--i:78"></span> 
+        <span style="--i:65"></span> 
+        <span style="--i:1"></span> 
+        <span style="--i:99"></span>  
+        <span style="--i:3"></span> 
+        <span style="--i:6"></span> 
+        <span style="--i:81"></span> 
+        <span style="--i:64"></span> 
+        <span style="--i:95"></span> 
+    </div>
+    
+    </section>   
+
+    <section id="about-me-section">
+        <div class="intro-bio aboutme-section-animation">
+            <div class="section-title">About Me</div>
+
+            <div class="about-me-section-profile-pic"><img src="/ResourcesUsed/Images/programmer.png" alt=""></div>
+
+            <div class="small-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc. Nam
+                libero justo laoreet sit amet. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Sit
+                amet commodo nulla facilisi.</div>
+        </div>
+        <div id="my-skills-section" class="aboutme-section-animation">
+            <div class="my-skills">My Skills</div>
+
+            <div class="progressBars">
+                <!-- Html -->
+                <label for="html" class="progress-name-label">HTML:</label>
+                <div class="Html">
+                    <progress id="html" value="80" max="100"></progress>
+                </div>
+                <!-- CSS -->
+                <label for="css" class="progress-name-label">CSS:</label>
+                <div class="CSS">
+                    <progress id="css" value="80" max="100"></progress>
+                </div>
+                <!-- JavaScript -->
+                <label for="javascript" class="progress-name-label">JavaScript:</label>
+                <div class="JavaScript">
+                    <progress id="javascript" value="75" max="100"></progress>
+                </div>
+                <!-- Bootstrap -->
+                <label for="bootstrap" class="progress-name-label">Bootstrap:</label>
+                <div class="Bootstrap">
+                    <progress id="bootstrap" value="70" max="100"></progress>
+                </div>
+                <!-- React -->
+                <label for="react" class="progress-name-label">React:</label>
+                <div class="React">
+                    <progress id="react" value="10" max="100"></progress>
+                </div>
+                <!-- Node Js -->
+                <label for="nodejs" class="progress-name-label">Node Js:</label>
+                <div class="NodeJs">
+                    <progress id="nodejs" value="20" max="100"></progress>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio-section">
+        <div class="section-title title-portfolio portfolio-section-animation">Portfolio
+        </div>
+        <div class="all-projects">
+
+            <div class="projects portfolio-section-animation" id="Project-1">
+                <div class="projects-img">
+                    <img src="./ResourcesUsed/Images/dummy-img.png" alt="">
+                </div>
+
+                <div class="projects-details">
+                    <div class="projects-title" >
+                        Project -1
+                    </div>
+                    <div class="projects-bio">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, natus. Dolor qui accusamus excepturi numquam modi minus facilis culpa quis, maxime molestiae omnis, laudantium rem nostrum deserunt repellendus! Incidunt, 
+                    </div>
+                    <div class="projects-view">
+                        <button class="view-project btn-content">View Project</button>
+                        <button class="view-Github btn-content">View GitHub</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="projects portfolio-section-animation" id="Project-2">
+                <div class="projects-img">
+                    <img src="./ResourcesUsed/Images/dummy-img.png" alt="">
+                </div>
+
+                <div class="projects-details">
+                    <div class="projects-title" >
+                        Project -2
+                    </div>
+                    <div class="projects-bio">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, natus. Dolor qui accusamus excepturi numquam modi minus facilis culpa quis, maxime molestiae omnis, laudantium rem nostrum deserunt repellendus! Incidunt, 
+                    </div>
+                    <div class="projects-view">
+                        <button class="view-project btn-content">View Project</button>
+                        <button class="view-Github btn-content">View GitHub</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+
+
+    <!-- JS Script File -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDdnYNXYn84TlbEP6kGwJ74MlC3Zhw-sPU",
+          authDomain: "portfolio-maheep-gupta.firebaseapp.com",
+          projectId: "portfolio-maheep-gupta",
+          storageBucket: "portfolio-maheep-gupta.appspot.com",
+          messagingSenderId: "755872388903",
+          appId: "1:755872388903:web:294e8dcb9f969b20a5fb02",
+          measurementId: "G-8T4KDQWPFP"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <!-- Main Page JS -->
+    <script src="./ResourcesUsed/Files/JS/main.js"></script>
+    <!-- Rest All Animation -->
+    <script src="./ResourcesUsed/Files/JS/page-animation.js"></script>
+</body>
+
+</html>

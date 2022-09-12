@@ -1,0 +1,64 @@
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+/* Universal Classes */
+.animationPlayState{
+    animation: none;
+}
+.Hide{
+    display:none;
+}
+.slideInX-title {
+    animation-name: slideInLeft-title;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideInLeft-title {
+    0% {
+        transform: translateX(-80vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.slideInUp {
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes slideInUp {
+    0% {
+        transform: translateY(10vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

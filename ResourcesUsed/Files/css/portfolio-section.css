@@ -1,0 +1,127 @@
+section#portfolio-section{
+    width: 100vw;
+    position: relative;
+    left: 15vw;
+}
+hr{
+    height: 1px;
+    background-color:rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin: 5px;
+    border: none;
+}
+.title-portfolio{
+    width: 100%;
+    text-decoration: underline;
+}
+.projects{
+    display: flex;
+    gap: 4.813rem;
+}
+.all-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top:  4.125rem;
+}
+.projects-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    color:#C65555;
+    
+}
+.projects-details{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 100vw;
+}
+.projects-img{
+    height: 220px;
+    width: 220px;
+    position: relative;
+    top:18px
+}
+.projects-img img{
+    max-height: 100%;
+}
+.projects-bio{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    width: 80%;
+}
+.projects-view{
+    position: relative;
+    top: 15px;
+    display: flex;
+    gap: 30px;
+}
+button{
+    outline: none;
+}
+.btn-content{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: white;
+    background-color: #323335;
+    border: 4px solid #C65555;
+    border-radius: 15px;
+    height: 60px;
+    width: 240px;
+    text-align: center;
+}
+.btn-content:hover{
+    border-color:#fff;
+    cursor: pointer;
+    color: #C65555; 
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.56);
+    
+}
+@media only screen and (max-width: 425px){
+    section#portfolio-section{
+        left: 0;
+    }
+    .projects{
+        display: block;
+    }
+    .all-projects{
+        margin: 0;
+    }
+    .projects-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .projects-img{
+        height: 110px;
+        text-align: center;
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+    .projects-bio{
+        font-size: 15px;
+        line-height: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .projects-view{
+        gap: 15px;
+        margin: 0 20px 0 20px;
+
+    }
+    
+    .btn-content{
+        height: 40px;
+        border-radius: 10px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    hr{
+        display: none;
+    }
+}
