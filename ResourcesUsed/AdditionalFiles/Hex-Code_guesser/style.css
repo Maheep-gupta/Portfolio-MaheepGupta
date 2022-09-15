@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.bar2{
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+.timer{
+    padding-left: 20px;
+}
+.green-bar{
+    position: absolute;
+    display: flex;
+    width: 120rem;
+    z-index: 1;
+}
+.circle{
+    position: relative;
+    display: flex;
+    top: 20px;
+    left: 10px;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid #212121;
+    border-radius: 50%;
+    background-color: #212121;
+    z-index: 3;
+}
+.bar3{
+    display: flex;
+    position: relative;
+    float: right;
+    background-color: #FCAA1A;
+    z-index: -2;
+}
+.bar4{
+    display: flex;
+    width: 120rem;
+    background-color: #4ABDAC;
+    height: 72px;
+    
+}
+.score{
+    display: flex;
+    /* flex-direction:; */
+    position: absolute;
+    left: 85%;
+    float: right;
+}
+.Question-block{
+    border: 5px solid white;
+    padding:15px 15px 15px 15px ;
+    display: inline-block;
+    position: relative;
+    top: -15rem;
+    left: 25%;
+    border-radius: 10px;
+}
+#color-card1{
+    background-color: white;
+    margin-right:2rem ;
+    margin-bottom: 2em;
+}
+#color-card2{
+    background-color: white;
+    margin-right:2rem ;
+    margin-bottom: 2em;
+}
+#color-card3{
+    background-color: white;
+    margin-bottom: 2em;
+    
+}
+#color-card4{
+    background-color: white;
+    margin-right:2rem ;
+    
+}
+#color-card5{
+    background-color: white;
+    margin-right:2rem ;
+    
+}
+#color-card6{
+    background-color: white;
+    
+}
+.btn-primary{
+    background-color: rgb(23,119,242);
+    padding: 10px 12px 10px 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn-primary:hover{
+    background-color: rgb(31, 124, 244);
+}
+.btn-primary:disabled{
+    cursor: not-allowed;
+}
+.htp .htp-title{
+    
+    position: relative;
+    font-size: 72px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.steps{
+    display: inline-block;
+    position: relative;
+    left: 10rem;
+}
+li{
+    font-size: 30px;
+    color: whitesmoke;
+}
+#ques{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:0px 10px 0px 10px;
+}
+.color-cards{
+    border: 5px solid white;
+}

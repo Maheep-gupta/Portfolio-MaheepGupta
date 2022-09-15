@@ -95,8 +95,64 @@ textarea::placeholder{
     width: 88%;
 }
 
+@media only screen and (max-width: 320px){
+    section#contact-section{
+        width: 100vw;
+        position:relative;
+        left: 0;
+        top: 15vh;
+    }
+    .contact-form-detail{
+        margin-left: 0;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .name-gmail{
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    form{
+        gap: 10px;
+        margin: 1rem;
+    }
+    #name, #gmail{
+        width: 100%;
+    }
+    #message{
+        height: 100%;
+        width: 99%;
+    }
 
-@media only screen and (min-width: 320px) and (max-width:425px){
+    input[type="submit"] {
+        width: 7rem;
+        font-size: 20px;
+    }
+    .title-contact{
+        margin: 0;
+    }
+    .title-detail{
+        font-size: 1rem;
+        width: 93%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    input[type="text"] {
+        padding: 0;
+        font-size: 25px;
+    }
+    input::placeholder,textarea::placeholder{
+        font-size: 25px;
+    }
+
+    input{
+        border-radius: 5px;
+    }
+    textarea{
+        height: 5rem;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width:425px){
     section#contact-section{
         width: 100vw;
         position:relative;
@@ -158,6 +214,7 @@ textarea::placeholder{
         width: 100vw;
         position:relative;
         left: 0;
+        top: 30vh;
     }
     
     div.contact-form-detail{

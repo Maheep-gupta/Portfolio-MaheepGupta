@@ -32,6 +32,7 @@ hr{
     font-size: 60px;
     line-height: 73px;
     color:#C65555;
+    text-decoration: underline;
     
 }
 .projects-details{
@@ -48,6 +49,7 @@ hr{
 }
 .projects-img img{
     max-height: 100%;
+    max-width: 100%;
 }
 .projects-bio{
     font-style: normal;
@@ -62,6 +64,10 @@ hr{
 }
 button{
     outline: none;
+}
+.view-project a{
+    text-decoration: none;
+    color: #fff;
 }
 .btn-content{
     font-style: normal;
@@ -87,7 +93,7 @@ button{
 @media only screen and (min-width: 320px) and (max-width:425px){
     section#portfolio-section{
         width: 100vw;
-        top: 2.875rem;
+        top: 0;
         left: 0;
     }
     .projects{
@@ -101,8 +107,10 @@ button{
         width: 100%;
     }
     .projects-title{
+        margin-top: 20px;
         font-size: 30px;
         text-align: center;
+        line-height: 40px;
     }
     .projects-img{
         height: 110px;
@@ -138,7 +146,7 @@ button{
         width: 100vw;
         position:relative;
         left: 0;
-        top: 11.276vw;
+        top: 15vh;
     }
     .projects-details{
         width: 57vw;
@@ -155,10 +163,11 @@ button{
         line-height: 25px;
     }
     .projects-title{
-        font-size: 58px;
+        font-size: 37px;
         position: relative;
-        left: -60px;
+        left: -181px;
         top: -19px;
+
         text-decoration: underline;
     }
 

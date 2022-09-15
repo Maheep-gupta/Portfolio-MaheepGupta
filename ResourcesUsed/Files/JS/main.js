@@ -16,6 +16,7 @@ function submitForm(){
     let formButton=document.getElementsByName('contact-form')[0];
     formButton.submit();
     formButton.reset();
+    alert("Sorry! This form is not working now, But this will be available Very Soon")
 }
 // Adding animation on hover on main page content Section
 function elementHovered(hoveredElement){

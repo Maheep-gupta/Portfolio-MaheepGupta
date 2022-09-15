@@ -40,7 +40,7 @@ section#about-me-section{
     font-weight: 300;
     text-align: center;
     line-height: 37px;
-    width:97%;
+    width:92%;
 }
 #my-skills-section{
     position: relative;
@@ -84,6 +84,7 @@ progress::-webkit-progress-value {
         width: 100vw;
         left: 0;
         gap:10vw;
+        top: -10vh;
     }
     .section-title,.my-skills{
         font-size: 2.3rem;

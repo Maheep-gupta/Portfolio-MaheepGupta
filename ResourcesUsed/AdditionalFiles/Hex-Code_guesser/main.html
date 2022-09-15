@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guess The Color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#212121]">
+    <div class="flex text-[3rem] bg-green-500 mt-[10px] text-white green-bar ">
+        <div class="timer ">
+            <p class="inline-block"> Time:-
+            <p id="timer" class="inline-block">10</p></p>
+        </div>
+        <p class="inline-block ml-[35rem]">Guess the Color &nbsp;
+            <p class="inline-block RGB-ques " id="ques">#ffffff</p>
+        </p>
+        <div class="inline-block score ">
+        <p class="ml-[-5rem] inline-block"> Score:-</p>
+        <p id="score-val" class="inline-block">0</p></div>
+    </div>
+
+    <div class="h-[100vh] w-[72px] ml-[10px]  bg-red-600 bar2"></div>
+
+    <div class="h-[100vh] w-[72px] ml-[10px] bar3 mr-[10px]"></div>
+
+    <div class="Question-block"> 
+        <div class="uppar-part">
+        <div id="color-card1" class=" color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div>
+
+        <div id="color-card2" class=" color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div>
+
+        <div id="color-card3" class=" color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div></div>
+        <div class="lower-part">
+        <div id="color-card4" class=" color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div>
+
+        <div id="color-card5" class="color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div>
+
+        <div id="color-card6" class="color-cards inline-block rounded-[15px] h-[15rem] w-[15rem] "></div></div>
+    </div>
+
+    <div class="next-btn  inline-block relative -top-[10rem] left-[10rem]">
+
+        <button id="start" class="btn-primary mr-[1rem] text-white" onclick="mainGame()">Start</button>
+    </div>
+    
+    <div class="next-btn  inline-block relative -top-[10rem] left-[10rem]">
+        
+        <button class="btn-primary mr-[1rem] text-white" id="skip" disabled>Skip</button>
+    </div>
+    <div class="revise-btn inline-block relative -top-[10rem] left-[10rem]">
+
+        <button id="revise_ques" class="btn-primary text-white" disabled>Reset Button</button> 
+    </div>
+
+    <div class="htp">
+        <p class="htp-title">How to Play</p>
+        <div class="steps">
+            <ul type="circle">
+                <li><p> Click on Start button to start the game</p></li>
+                <li><p> Use Skip Button to Skip the Current Question</p></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

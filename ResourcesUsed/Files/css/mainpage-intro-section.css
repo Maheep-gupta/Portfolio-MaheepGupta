@@ -112,6 +112,7 @@ section#main-page-intro{
     section#main-page-intro{
         width: 100vw;
         left: 0rem;
+        top: -12vh;
     }
     nav{
         display: none;
@@ -188,6 +189,7 @@ section#main-page-intro{
     section#main-page-intro{
         width: 100vw;
         left: 0rem;
+        top: -10vh;
     }
     nav{
         display: none;
@@ -264,6 +266,7 @@ section#main-page-intro{
     section#main-page-intro{
         width: 100vw;
         left: 0rem;
+        top:-10vh;
     }
     nav{
         display: none;
@@ -340,6 +343,7 @@ section#main-page-intro{
     section#main-page-intro{
         width: 100vw;
         left: 0rem;
+        top: -10vh;
     }
     nav{
         display: none;
@@ -415,6 +419,8 @@ section#main-page-intro{
     }
     .mobileDevices{
         display: inline-block;
+        position: sticky;
+        top: 0
     }
     #loadingScreen-text {
         position: absolute;
