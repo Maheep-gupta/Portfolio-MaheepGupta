@@ -68,6 +68,7 @@ function disablingCloseButton(){
 function aboutMeAnimation(){
     disablingCloseButton();
     window.location.assign("index.html#about-me-section")
+    // window.location.assign("./ResourcesUsed/HtmlFiles/aboutMe.html")
     deColoringLinks();
 
     var coloringId=document.getElementById("about-me-link");

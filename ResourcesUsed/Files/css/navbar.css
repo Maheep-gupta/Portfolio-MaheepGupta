@@ -9,7 +9,6 @@ body{
     overflow-x: hidden;
     cursor: pointer;
     -webkit-tap-highlight-color:transparent;
-    /* overflow-y:scroll; */
 }
 .website-content{
     height: fit-content;
@@ -20,7 +19,7 @@ body{
 nav{
     position: fixed;
     width: 13.125rem;
-    height: 100vh;
+    height: 100%;
     background-color: #242424;
     min-width: 6rem;
     z-index: 99;
@@ -84,43 +83,40 @@ nav{
 .socialMedia{
     position:absolute;
     top: 80vh;
-    /* display: grid; */
-
 }
 .socialMedia div{
+    height: 4rem;
+    width: 4rem;
     display: inline-block;
 }
 .socialMedia img{
+    
     max-height: 100%;
     max-width: 100%;
 }
-
 .filled-logo{
     display: none;
 }
-
 .github:hover .github-filled-logo{
     display: block;
-    transition: 0.5s ease-in-out;
 }
 .github:hover .github-logo{
     display: none;
 }
-.linkedIn:hover .linkedIn-filled-logo{ 
+.linkedIn:hover .linkedIn-filled-logo{
     display: block;
-    transition: 0.5s ease-in-out;
-
 }
-.linkedIn:hover .linkedIn-logo{ 
+.linkedIn:hover .linkedIn-logo{
     display: none;
 }
 .twitter:hover .twitter-filled-logo{
-    display: block; 
-    transition: 0.5s ease-in-out;
+    display: block;
 }
 .twitter:hover .twitter-logo{
-    display: none; 
+    display: none;
 }
+
+/* mobile devices navbar */
 
 .mobileDevices{
     height: 4rem;   
@@ -222,4 +218,46 @@ nav{
     position: relative;
     top: -45px;
     left: 0;
+}
+
+.mobileDevices-social-media{
+    position:absolute;
+    top: 54vh;
+    width: 100%;
+}
+.mobileDevices-social-media div{
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+}
+.mobileDevices-social-media img{
+    
+    max-height: 100%;
+    max-width: 100%;
+}
+.mobileDevices-social-media .github .github-logo{
+    display: none;
+
+}
+.mobileDevices-social-media .github .github-filled-logo{
+    display: block;
+
+}
+
+.mobileDevices-social-media .linkedIn .linkedIn-logo{
+    display: none;
+
+}
+.mobileDevices-social-media .linkedIn .linkedIn-filled-logo{
+    display: block;
+
+}
+
+.mobileDevices-social-media .twitter .twitter-logo{
+    display: none;
+
+}
+.mobileDevices-social-media .twitter .twitter-filled-logo{
+    display: block;
+
 }

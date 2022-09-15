@@ -1,7 +1,8 @@
 section#portfolio-section{
-    width: 100vw;
-    position: relative;
-    left: 15vw;
+    width: 90vw;
+    position:relative;
+    left: 10vw;
+    top: 11.276vw;
 }
 hr{
     height: 1px;
@@ -17,6 +18,7 @@ hr{
 .projects{
     display: flex;
     gap: 4.813rem;
+    margin-left: 4.193vw;
 }
 .all-projects{
     display: flex;
@@ -36,7 +38,7 @@ hr{
     display: flex;
     gap: 12px;
     flex-direction: column;
-    width: 100vw;
+    width: 66vw;
 }
 .projects-img{
     height: 220px;
@@ -49,10 +51,8 @@ hr{
 }
 .projects-bio{
     font-style: normal;
-    font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-    width: 80%;
 }
 .projects-view{
     position: relative;
@@ -83,15 +83,22 @@ button{
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.56);
     
 }
-@media only screen and (max-width: 425px){
+
+@media only screen and (min-width: 320px) and (max-width:425px){
     section#portfolio-section{
+        width: 100vw;
+        top: 2.875rem;
         left: 0;
     }
     .projects{
+        margin: 0;
         display: block;
     }
     .all-projects{
         margin: 0;
+    }
+    .projects-details{
+        width: 100%;
     }
     .projects-title{
         font-size: 30px;
@@ -106,8 +113,9 @@ button{
     .projects-bio{
         font-size: 15px;
         line-height: 20px;
-        padding-left: 20px;
-        width: 100%;
+        text-align: center;
+        padding-left: 1vw;
+        width: 96%;
     }
     .projects-view{
         gap: 15px;
@@ -125,3 +133,34 @@ button{
         display: none;
     }
 }
+@media only screen and (min-width: 426px) and (max-width:1024px){
+    section#portfolio-section{
+        width: 100vw;
+        position:relative;
+        left: 0;
+        top: 11.276vw;
+    }
+    .projects-details{
+        width: 57vw;
+    }
+    .btn-content{
+        font-size: 25px;
+        width: 180px;
+    }
+    .projects-img{
+        top: 75px;
+    }
+    .projects-bio{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .projects-title{
+        font-size: 58px;
+        position: relative;
+        left: -60px;
+        top: -19px;
+        text-decoration: underline;
+    }
+
+}
+

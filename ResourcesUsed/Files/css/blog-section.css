@@ -1,51 +1,44 @@
 
 section#blog-section{
-    width: fit-content;
-    position:relative;
-    /* top: 110vh; */
-    left: 15vw;
+    width: 90vw;
+    position: relative;
+    left: 10vw;
+    top: 15vw;
 }
 
-.title-blog{
-    left:37rem;
-    /* text-decoration: underline; */
-}
 .main{
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 70px;
-    gap: 100px;
+    padding: 5rem 0 2rem 6rem;
+    gap: 3.6vw;
+    width: 91%;
 }
 
 .card-main{
-    height: 250px;
-    width: 400px;
+    height: 26.261vh;
+    width: 100%;
     background-color: #353535;
     border-radius: 25px;
     z-index: 1;
 
 }
 .card-img{
-    height: 235px;
-    z-index: 10;
-    position: absolute;
+    height: 9vw;
+    position: relative;
     transition: 0.5s;
-    
-}
-.card-img{
     max-width: 100%;
     max-height: 100%;
+    position: relative;
+    
 }
+
 .cardText{
-    font-size: 16px;
-    width: 210px;
-    height: 210px;
-    padding-right: 10px;
-    float: right;
-    text-align: center;
-    opacity: 0;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
     font-weight: 200;
-    margin-top: 21px;
+    margin-top: 10px;
+    position: relative;
 }
 h2{
     text-align: center;
@@ -53,31 +46,25 @@ h2{
     font-size: 35px;
     margin: 0;
     margin-top: 10px;
-    margin-bottom: 15px;
-    margin-right: 45px;
 }
-.card-btn{
-    position: relative;
-    left: 215px;
-    top: 180px;
+h4{
+    margin: 0;
+    font-weight: 200;
 }
-.btn-read-more{    margin: 5px;
+
+.btn-read-more{    
+    margin: 5px;
     height: 40px;
     font-weight: 400;
-    width: 150px;
-    font-size: 22px;
+    width: 7.8vw;
+    font-size: 1.11vw;
     line-height: normal;
     border-radius: 10px;
+    position: relative;
+    top: 1vh;
+    left: 1vw;
 } 
-.card-main:hover .card-img{
-    height: 150px;
-    width: 150px;
-    transition: 0.5s;
-}
-.card-main:hover .cardText{
-    transition: 0.5s ease-in-out;
-    opacity: 1;
-}
+
 .web-dev{
     border-top: 5px solid #4fb2d9;
 }
@@ -94,3 +81,136 @@ h2{
     border-top: 5px solid #ece5e5;
 
 }
+.square{
+    width: 100vw;
+}
+h4{
+    font-weight: 400;
+    margin: 1rem 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 320px){
+    section#blog-section{
+        width: 100vw;
+        left: 0;
+        top: 10vh;
+    }
+    .main{
+        margin-top: 2rem;
+        margin-left: 0.3rem;
+        grid-template-columns: auto;
+        padding:0;
+        gap: 1rem;
+        width: 94%;
+    }
+    
+    .card-btn{
+        width: fit-content;
+    }
+    .btn-read-more{    
+        position: relative;
+        top: -15vw;
+        left: -1vw;
+        width: 31.8vw;
+        font-size: 5.11vw;
+        margin: 5px;
+    }
+    .card-img{
+        height: 100px;
+        width: 100px;
+        left: 0;
+        bottom: 0;
+    }
+    .cardText{
+        opacity: 1;
+        margin-top: 15px;
+        text-align: left;
+        width: 100%;
+        font-size: 17px;
+    }
+    h2{
+        font-size: 20px;
+        width: 100%;
+    }
+    h4{
+        margin: 1rem 1rem 0 1rem;
+    }
+}
+@media only screen and (min-width: 321px)and (max-width: 600px){
+    section#blog-section{
+        width: 100vw;
+        left: 0;
+        top: 10vh;
+    }
+    .main{
+        grid-template-columns: auto;
+        padding:0;
+        gap: 0;
+        width: 100%;
+    }
+    .card-main{
+        width: 94%;
+        margin: 1.5rem 1rem 1rem 1rem;
+        
+    }
+    .cardText{
+        opacity: 1;
+        margin-top: 15px;
+        text-align: left;
+        width: 100%;
+    }
+    h2{
+        font-size: 25px;
+        width: 100%;
+    }
+    h4{
+        margin: 1rem 1rem 0rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    section#blog-section{
+        left: 0;
+        width: 100vw;
+    }
+    .main{
+        grid-template-columns: auto auto;
+        width: 96%;
+        padding: 5rem 0 2rem 2rem;
+        
+    }
+    .card-img{
+        height: 11vw;
+    }
+    .cardText{
+        width: 100%;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .btn-read-more{
+        width: 14vw;
+        top: -5px;
+        left: 5px;
+        font-size: 2.11vw;
+    }
+    h4{
+        margin: 1rem 2rem 0 2rem;
+        font-size: 18px;
+    }
+    h2{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-img{
+        height: 8vw;
+
+    }
+    .btn-read-more{
+        top: 0;
+    }
+}
+

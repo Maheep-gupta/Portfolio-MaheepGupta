@@ -5,8 +5,8 @@
 .bgAnimation-element span{
     position: relative;
     top: -50px;
-    height: 1vw;
-    width: 1vw;
+    height: 50px;
+    width: 10vw;
     margin: 0 4px;
     background-color: #ffffffdc;
     box-shadow: 0 0 0 10px #ffffffdc,
@@ -20,12 +20,12 @@
     animation-duration: calc(125s / var(--i));
     animation-delay: 1s;
 }
-.square{
+/* .square{
     position: relative;
     top: 25vh;
     left: 15vw;
     z-index: -1;
-}
+} */
 .square span{
     height: 50px;
     width: 50px;
@@ -61,7 +61,7 @@
     }
 }@keyframes animate-square {
     0%{
-        transform: translateY(80vh)
+        transform: translateY(100vh)
         scale(0.2) rotate(0deg);
     }
     
