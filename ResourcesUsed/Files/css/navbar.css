@@ -261,3 +261,10 @@ nav{
     display: block;
 
 }
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: #C65555;
+    width: 100vw;
+    height: 2rem;
+}

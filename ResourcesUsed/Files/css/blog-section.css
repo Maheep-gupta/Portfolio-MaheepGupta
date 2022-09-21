@@ -175,6 +175,38 @@ h4{
         margin: 1rem 1rem 0rem 2rem;
     }
 }
+@media only screen and (min-width: 601px)and (max-width: 767px){
+    section#blog-section{
+        width: 100vw;
+        left: 0;
+        top: 10vh;
+    }
+    .main{
+        grid-template-columns: auto;
+        padding:0;
+        gap: 0;
+        width: 100%;
+    }
+    .card-main{
+        width: 94%;
+        margin: 1.5rem 1rem 1rem 1rem;
+        height: 17rem;
+        
+    }
+    .cardText{
+        opacity: 1;
+        margin-top: 15px;
+        text-align: left;
+        width: 100%;
+    }
+    h2{
+        font-size: 25px;
+        width: 100%;
+    }
+    h4{
+        margin: 1rem 1rem 0rem 2rem;
+    }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     section#blog-section{

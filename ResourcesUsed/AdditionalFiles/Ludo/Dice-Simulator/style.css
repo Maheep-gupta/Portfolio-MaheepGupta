@@ -1,0 +1,32 @@
+.faces{
+    display: none;
+}
+
+.faces-display{
+    animation-name:roll;
+    animation-duration: 1s;
+    display: inline-block;
+}
+.button{
+    width: fit-content;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #212121;
+    color: #fff;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}

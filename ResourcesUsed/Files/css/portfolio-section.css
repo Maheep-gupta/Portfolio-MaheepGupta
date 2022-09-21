@@ -141,7 +141,38 @@ button{
         display: none;
     }
 }
-@media only screen and (min-width: 426px) and (max-width:1024px){
+@media only screen and (min-width: 426px) and (max-width:768px){
+    section#portfolio-section{
+        width: 100vw;
+        position:relative;
+        left: 0;
+        top: 0vh;
+    }
+    .projects-details{
+        width: 57vw;
+    }
+    .btn-content{
+        font-size: 20px;
+        width: 150px;
+    }
+    .projects-img{
+        top: 75px;
+    }
+    .projects-bio{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .projects-title{
+        font-size: 28px;
+        position: relative;
+        left: -155px;
+        top: -19px;
+        line-height: 45px;
+        text-decoration: underline;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
     section#portfolio-section{
         width: 100vw;
         position:relative;
@@ -167,7 +198,6 @@ button{
         position: relative;
         left: -181px;
         top: -19px;
-
         text-decoration: underline;
     }
 

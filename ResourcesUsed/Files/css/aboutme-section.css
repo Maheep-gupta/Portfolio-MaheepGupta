@@ -121,7 +121,52 @@ progress::-webkit-progress-value {
         margin: 0;
     }
 }
-@media only screen and (min-width: 426px) and (max-width: 1024px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    section#about-me-section{
+        width: 100vw;
+        left: 0;
+        gap:10vw;
+        top: -8vh;
+    }
+    .section-title,.my-skills{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+    .about-me-section-profile-pic{
+        height: 6.25rem;
+    }
+    .small-bio{
+        width: 95%;
+        font-size: 22px;
+        line-height: 25px;
+        height: auto;
+    }
+    progress{
+        height: 2.5rem;
+    }
+    .progressBars{
+        gap:10px;
+        width: 85vw;
+    }
+    .progress-name-label{
+        font-size: 1.5rem;
+    }
+    #my-skills-section{
+        top: 0;
+        gap: 2.5rem;
+    }
+    .intro-bio{
+        gap: 10vw;
+    }
+    label{
+        margin: 0;
+
+    }
+    progress{
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     section#about-me-section{
         width: 100vw;
         left: 0;

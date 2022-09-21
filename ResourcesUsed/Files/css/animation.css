@@ -59,7 +59,8 @@
         scale(1);
         opacity: 0;
     }
-}@keyframes animate-square {
+}
+@keyframes animate-square {
     0%{
         transform: translateY(100vh)
         scale(0.2) rotate(0deg);

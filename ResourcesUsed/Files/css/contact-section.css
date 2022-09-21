@@ -103,7 +103,7 @@ textarea::placeholder{
         top: 15vh;
     }
     .contact-form-detail{
-        margin-left: 0;
+        margin-left: 0.2rem;
     }
     .contact-form{
         width: 100%;
@@ -160,7 +160,8 @@ textarea::placeholder{
         top: 15vh;
     }
     .contact-form-detail{
-        margin-left: 0;
+        margin-left: 0.5rem;
+
     }
     .contact-form{
         width: 100%;
@@ -209,7 +210,32 @@ textarea::placeholder{
         height: 5rem;
     }
 }
-@media only screen and (min-width: 426px) and (max-width:1024px){
+@media only screen and (min-width: 426px) and (max-width:768px){
+    section#contact-section{
+        width: 100vw;
+        position:relative;
+        left: 0;
+        top: 15vh;
+    }
+    
+    div.contact-form-detail{
+        margin-left: 2rem ;
+    }
+    #message{
+        height: 20rem;
+        width: 100%;
+    }
+    .contact-form{
+        width: 98%;
+    }
+    form{
+        margin: 2rem 2rem 2rem 1rem;
+    }
+    .title-detail{
+        margin: 2rem 2rem 2rem 1rem;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
     section#contact-section{
         width: 100vw;
         position:relative;
